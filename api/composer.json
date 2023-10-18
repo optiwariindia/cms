@@ -1,0 +1,21 @@
+{
+    "name": "optiwariindia/cms",
+    "description": "CMS for Website project using PHP, Includes UserInterface in React and boilerplaapi in php",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "optiwariindia\\cms\\": "php/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Om Prakash Tiwari",
+            "email": "optiwari.india@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "optiwariindia/website": "dev-main"
+    }
+}
