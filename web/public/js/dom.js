@@ -52,3 +52,13 @@ String.prototype.slug=function(){
     let exp=RegExp(/\W/g);
     return this.replace(exp,"-").toLowerCase()
 }
+Number.prototype.toDataSize=function(precision=3){
+    let bytes=this;
+    const units = ['bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+    let i = 0;
+    while (bytes >= 1024) {
+      bytes /= 1024;
+      i++;
+    }
+    return `${bytes.toFixed(3)} ${units[i]}`;
+}
